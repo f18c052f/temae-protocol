@@ -104,3 +104,9 @@ InitTestScene*.unity*
 
 # Auto-generated cache in Assets folder
 /[Aa]ssets/[Ss]ceneDependencyCache*
+
+# uloop-cli (unity-cli-loop) runtime files
+# https://github.com/hatayama/unity-cli-loop
+/.uloop/*
+!/.uloop/settings.permissions.json
+!/.uloop/settings.tools.json
