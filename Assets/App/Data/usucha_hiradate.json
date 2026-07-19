@@ -1,0 +1,57 @@
+{
+  "temae": "usucha_hiradate",
+  "school": "urasenke",
+  "calibration": {
+    "tatamiSize": { "length": 1.76, "width": 0.88 },
+    "requiredTatami": ["temae", "approach1"],
+    "layout": [
+      { "id": "approach1", "adjacentTo": "temae", "edge": "v0", "rotated90": false }
+    ]
+  },
+  "sections": [
+    {
+      "id": "nyushitsu",
+      "label": "入室",
+      "steps": [
+        {
+          "id": "s001",
+          "text": "茶道口で一礼",
+          "note": "襖の開閉は省略(MVP)",
+          "footsteps": [],
+          "tools": []
+        },
+        {
+          "id": "s002",
+          "text": "左足から入り、approach1畳を進む",
+          "note": "",
+          "footsteps": [
+            { "foot": "L", "tatami": "approach1", "u": 0.20, "v": 0.5, "yawDeg": 0, "order": 1 },
+            { "foot": "R", "tatami": "approach1", "u": 0.45, "v": 0.5, "yawDeg": 0, "order": 2 },
+            { "foot": "L", "tatami": "approach1", "u": 0.70, "v": 0.5, "yawDeg": 0, "order": 3 }
+          ],
+          "tools": []
+        },
+        {
+          "id": "s003",
+          "text": "点前畳(temae)へ進み入る",
+          "note": "",
+          "footsteps": [
+            { "foot": "R", "tatami": "temae", "u": 0.10, "v": 0.5, "yawDeg": 0, "order": 1 },
+            { "foot": "L", "tatami": "temae", "u": 0.30, "v": 0.5, "yawDeg": 0, "order": 2 }
+          ],
+          "tools": []
+        },
+        {
+          "id": "s004",
+          "text": "点前座に正対して座る",
+          "note": "",
+          "footsteps": [
+            { "foot": "R", "tatami": "temae", "u": 0.45, "v": 0.5, "yawDeg": 90, "order": 1 },
+            { "foot": "L", "tatami": "temae", "u": 0.55, "v": 0.5, "yawDeg": 90, "order": 2 }
+          ],
+          "tools": []
+        }
+      ]
+    }
+  ]
+}
